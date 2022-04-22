@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="403.0" prefWidth="379.0" style="-fx-background-color: #212121;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.MenuController">
+   <children>
+      <AnchorPane layoutX="1.0" layoutY="2.0" prefHeight="401.0" prefWidth="399.0">
+         <children>
+            <Label alignment="CENTER" layoutX="73.0" layoutY="102.0" prefHeight="68.0" prefWidth="253.0" text="Welcome to Studorio" textFill="WHITE">
+               <font>
+                  <Font name="Candara Light" size="27.0" />
+               </font></Label>
+            <Button fx:id="chatButton" layoutX="78.0" layoutY="186.0" mnemonicParsing="false" onAction="#chatHandle" style="-fx-background-color: #0e4bef;" text="Chat Now" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="15.0" />
+               </font></Button>
+            <Button fx:id="searchButton" layoutX="231.0" layoutY="186.0" mnemonicParsing="false" onAction="#searchHandle" style="-fx-background-color: #0e4bef;" text="Search" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="15.0" />
+               </font></Button>
+            <Line endX="130.0" fill="WHITE" layoutX="179.0" layoutY="90.0" startX="-100.0" stroke="#0e4bef" strokeType="OUTSIDE" />
+            <Line endX="130.0" fill="WHITE" layoutX="179.0" layoutY="295.0" startX="-100.0" stroke="#0e4bef" strokeType="OUTSIDE" />
+            <Button fx:id="loginButton" layoutX="91.0" layoutY="238.0" mnemonicParsing="false" onAction="#loginHandle" style="-fx-background-color: #0e4bef;" text="Log In" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="signupButton" layoutX="227.0" layoutY="238.0" mnemonicParsing="false" onAction="#signupHandle" style="-fx-background-color: #0e4bef;" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

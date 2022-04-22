@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="399.0" prefWidth="397.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.SignupController">
+   <children>
+      <AnchorPane prefHeight="399.0" prefWidth="397.0">
+         <children>
+            <PasswordField fx:id="passwordField" layoutX="95.0" layoutY="139.0" onAction="#passwordHandle" promptText="Password">
+               <tooltip>
+                  <Tooltip fx:id="ttPassword" text="Empty Tooltip" />
+               </tooltip></PasswordField>
+            <ProgressIndicator fx:id="progressIndicator" layoutX="20.0" layoutY="346.0" prefHeight="31.0" prefWidth="27.0" progress="0.0" />
+            <TextField fx:id="usernameField" layoutX="95.0" layoutY="79.0" onAction="#userHandle" promptText="Username" />
+            <TextField fx:id="majorField" layoutX="95.0" layoutY="200.0" onAction="#majorHandle" promptText="Major" />
+            <TextField fx:id="emailField" layoutX="95.0" layoutY="255.0" onAction="#emailHandle" promptText="Email" />
+            <Button fx:id="createButton" layoutX="219.0" layoutY="346.0" mnemonicParsing="false" onAction="#createHandle" text="Create" />
+            <Button fx:id="menuButton" layoutX="310.0" layoutY="346.0" mnemonicParsing="false" onAction="#menuReturn" text="Menu" />
+            <CheckBox fx:id="showPasswordCheck" layoutX="2.0" layoutY="147.0" mnemonicParsing="false" onAction="#showPasswordHandle" prefHeight="13.0" prefWidth="97.0" text="Show password">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </CheckBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
