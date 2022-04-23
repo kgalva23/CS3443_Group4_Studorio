@@ -14,7 +14,6 @@
                <tooltip>
                   <Tooltip fx:id="ttPassword" text="Empty Tooltip" />
                </tooltip></PasswordField>
-            <ProgressIndicator fx:id="progressIndicator" layoutX="20.0" layoutY="346.0" prefHeight="31.0" prefWidth="27.0" progress="0.0" />
             <TextField fx:id="usernameField" layoutX="95.0" layoutY="79.0" onAction="#userHandle" promptText="Username" />
             <TextField fx:id="majorField" layoutX="95.0" layoutY="200.0" onAction="#majorHandle" promptText="Major" />
             <TextField fx:id="emailField" layoutX="95.0" layoutY="255.0" onAction="#emailHandle" promptText="Email" />
