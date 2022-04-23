@@ -13,28 +13,33 @@
    <children>
       <AnchorPane layoutX="1.0" layoutY="2.0" prefHeight="401.0" prefWidth="399.0">
          <children>
-            <Label alignment="CENTER" layoutX="73.0" layoutY="102.0" prefHeight="68.0" prefWidth="253.0" text="Welcome to Studorio" textFill="WHITE">
+            <Label alignment="CENTER" layoutX="43.0" layoutY="101.0" prefHeight="75.0" prefWidth="304.0" text="Welcome to Studorio" textFill="WHITE">
                <font>
-                  <Font name="Candara Light" size="27.0" />
+                  <Font name="Candara Light" size="32.0" />
                </font></Label>
             <Button fx:id="chatButton" layoutX="78.0" layoutY="186.0" mnemonicParsing="false" onAction="#chatHandle" style="-fx-background-color: #0e4bef;" text="Chat Now" textFill="WHITE">
                <font>
-                  <Font name="Segoe UI Bold" size="15.0" />
+                  <Font name="Segoe UI Semilight" size="15.0" />
                </font></Button>
             <Button fx:id="searchButton" layoutX="231.0" layoutY="186.0" mnemonicParsing="false" onAction="#searchHandle" style="-fx-background-color: #0e4bef;" text="Search" textFill="WHITE">
                <font>
-                  <Font name="Segoe UI Bold" size="15.0" />
+                  <Font name="Segoe UI Semilight" size="15.0" />
                </font></Button>
             <Line endX="130.0" fill="WHITE" layoutX="179.0" layoutY="90.0" startX="-100.0" stroke="#0e4bef" strokeType="OUTSIDE" />
             <Line endX="130.0" fill="WHITE" layoutX="179.0" layoutY="295.0" startX="-100.0" stroke="#0e4bef" strokeType="OUTSIDE" />
             <Button fx:id="loginButton" layoutX="91.0" layoutY="238.0" mnemonicParsing="false" onAction="#loginHandle" style="-fx-background-color: #0e4bef;" text="Log In" textFill="WHITE">
                <font>
-                  <Font name="Segoe UI Bold" size="15.0" />
+                  <Font name="Segoe UI Semilight" size="15.0" />
                </font>
             </Button>
             <Button fx:id="signupButton" layoutX="227.0" layoutY="238.0" mnemonicParsing="false" onAction="#signupHandle" style="-fx-background-color: #0e4bef;" text="Sign Up" textFill="WHITE">
                <font>
-                  <Font name="Segoe UI Bold" size="15.0" />
+                  <Font name="Segoe UI Semilight" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="aboutButton" layoutX="154.0" layoutY="347.0" mnemonicParsing="false" onAction="#aboutHandle" style="-fx-background-color: #fcba03;" text="About Us" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="Candara Light" size="15.0" />
                </font>
             </Button>
          </children>
