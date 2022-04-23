@@ -26,12 +26,15 @@ public class MenuController {
     
     @FXML
     private Button loginButton;
+    
+    @FXML
+    private Button aboutButton;
 
     @FXML
     void chatHandle(ActionEvent event) throws IOException {
     	URL url = new File("src/application/view/ChatRoom.fxml").toURI().toURL(); 
 		AnchorPane root = (AnchorPane)FXMLLoader.load(url);
-    	Scene scene = new Scene(root,400,400);
+    	Scene scene = new Scene(root,800,800);
     	Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
     	window.setScene(scene);
 
@@ -67,6 +70,10 @@ public class MenuController {
 
     }
 
+    @FXML
+    void aboutHandle(ActionEvent event) {
+
+    }
    
 
 
