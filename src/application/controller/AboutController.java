@@ -1,8 +1,7 @@
 package application;
 
 import java.io.IOException;
-
-
+import java.net.URL;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -22,41 +21,13 @@ public class AboutController {
 
     @FXML
     void handleHome(ActionEvent event) throws IOException {
-    	anchorPane = FXMLLoader.load(getClass().getResource("Main.fxml"));
-    	Scene scene = new Scene(anchorPane);
-    	Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
-    	window.setScene(scene);
-    	window.show();
     	
-    	/*		fixme comment above
-    	
-    		URL url = new File("src/application/view/MainMenu.fxml").toURI().toURL(); 
-		AnchorPane root = (AnchorPane)FXMLLoader.load(url);
+    	URL url = new File("src/application/view/MainMenu.fxml").toURI().toURL(); 
+	AnchorPane root = (AnchorPane)FXMLLoader.load(url);
     	Scene scene = new Scene(root,400,400);
     	Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
     	window.setScene(scene);
-    	
-    	
-    	*/
     
     }
 
 }
-
-//import java.net.URL;		fixme
-/*add something similar to this in main
-
-@FXML
-private Button aboutButton;
-
-void handleAbout(ActionEvent event) throws IOException {
-URL url = new File("src/application/view/About.fxml").toURI().toURL(); 
-AnchorPane root = (AnchorPane)FXMLLoader.load(url);
-Scene scene = new Scene(root,400,400);
-Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
-window.setScene(scene);
-
-}
-
-
-*/
