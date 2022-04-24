@@ -5,7 +5,7 @@ Name of your team: Group 4
 
 Full names of all team members: Austin Barthel, William Cantu, Kaleb Galvan, Noah Mesa, Connor Sorenson
 
-Short description ( (>=1 sentence ) of app: The purpose of this application is to enter basic information, such as age, major, and school, and filter the best possible study group which you can browse and select to join.
+Short description ( (>=1 sentence ) of app: The purpose of this application is to enter basic information, such as username, major, and interests, and filter the best possible study group which you can browse and select to join.
 
 Known bugs: If by the deadline there are still known issues (i.e. double clicking a button causes appto crash), list these with any helpful info.
 
