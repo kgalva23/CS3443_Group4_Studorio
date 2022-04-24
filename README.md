@@ -12,3 +12,5 @@ Known bugs: If by the deadline there are still known issues (i.e. double clickin
 Login info: If your app has a login page, provide a demo user.
 
 Versions or other requirements: If you use an API, special installation, or version of Java (above 8) or SceneBuilder (above3)
+Eclipse IDE Version: 2021-12 (4.22.0)
+
