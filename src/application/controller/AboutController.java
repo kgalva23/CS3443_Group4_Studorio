@@ -1,3 +1,11 @@
+/*
+ * Connor Sorenson (ojc780)
+ * 4/12/2022
+ * CS-3443-002 Spring 2022
+ */
+
+
+
 package application;
 
 import java.io.IOException;
@@ -20,7 +28,7 @@ public class AboutController {
     private Button homeButton;
 
     @FXML
-    void handleHome(ActionEvent event) throws IOException {
+    void handleHome(ActionEvent event) throws IOException { //handler for homeButton which returns veiew to MainMenu
     	
     	URL url = new File("src/application/view/MainMenu.fxml").toURI().toURL(); 
 	AnchorPane root = (AnchorPane)FXMLLoader.load(url);
