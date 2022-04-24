@@ -72,7 +72,7 @@ public class MenuController {
 
     @FXML
     void aboutHandle(ActionEvent event) throws IOException {
-    	URL url = new File("src/application/view/about.fxml").toURI().toURL(); 
+    	URL url = new File("src/application/view/About.fxml").toURI().toURL(); 
 		AnchorPane root = (AnchorPane)FXMLLoader.load(url);
     	Scene scene = new Scene(root,550,500);
     	Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();

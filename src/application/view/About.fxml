@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="anchorPane" prefHeight="486.0" prefWidth="547.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.aboutController">
+<AnchorPane fx:id="anchorPane" prefHeight="486.0" prefWidth="547.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.AboutController">
    <children>
       <TextArea layoutX="14.0" layoutY="14.0" prefHeight="454.0" prefWidth="404.0" style="-fx-background-color: blue; -fx-border-color: black;" text="&#10;&#10;&#10;&#10;&#10;      Studorio is an application to help college students connect. &#10;      Through our application a student can enter their basic &#10;      information and be matched with study groups of similar &#10;      people. No more worrying about finding a study group! &#10;                                      Sign up for Studorio now!&#10;&#10;&#10;                                          Founders Contribution&#10;&#10;          Kaleb - Main menu and User login fxmls and controllers, &#10;                       led project coordination&#10;          William - Search model class, fxml, and controller&#10;          Noah - Project designer, chat room fxml and controller&#10;          Austin - Search and Signup classes, fxmls and controllers&#10;          Connor - About Us fxml and controller, UML diagram&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;            &#10;&#10;&#10;&#10;&#10;&#10;">
          <font>
