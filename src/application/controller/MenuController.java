@@ -44,7 +44,7 @@ public class MenuController {
     void searchHandle(ActionEvent event) throws IOException {
     	URL url = new File("src/application/view/Search.fxml").toURI().toURL(); 
 		AnchorPane root = (AnchorPane)FXMLLoader.load(url);
-    	Scene scene = new Scene(root,400,400);
+    	Scene scene = new Scene(root,410,410);
     	Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
     	window.setScene(scene);
 
@@ -71,7 +71,12 @@ public class MenuController {
     }
 
     @FXML
-    void aboutHandle(ActionEvent event) {
+    void aboutHandle(ActionEvent event) throws IOException {
+    	URL url = new File("src/application/view/about.fxml").toURI().toURL(); 
+		AnchorPane root = (AnchorPane)FXMLLoader.load(url);
+    	Scene scene = new Scene(root,550,500);
+    	Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
+    	window.setScene(scene);
 
     }
    

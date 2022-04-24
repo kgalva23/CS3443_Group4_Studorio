@@ -57,7 +57,7 @@
             <Font name="Candara Light" size="27.0" />
          </font>
       </TextField>
-      <ListView layoutX="522.0" layoutY="143.0" prefHeight="295.0" prefWidth="250.0" />
+      <ListView fx:id="activeUserList" layoutX="522.0" layoutY="143.0" prefHeight="295.0" prefWidth="250.0" />
       <TextField editable="false" layoutX="506.0" layoutY="91.0" prefHeight="52.0" prefWidth="250.0" promptText="Active  Users:" style="-fx-background-color: #212121; -fx-font-color: #ffffff;">
          <font>
             <Font name="Candara Light" size="27.0" />
@@ -65,7 +65,7 @@
       </TextField>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0e4bef" height="7.0" layoutX="26.0" layoutY="46.0" stroke="BLACK" strokeType="INSIDE" width="598.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0e4bef" height="7.0" layoutX="26.0" layoutY="757.0" stroke="BLACK" strokeType="INSIDE" width="756.0" />
-      <TextArea fx:id="display_chatText" disable="true" editable="false" layoutX="36.0" layoutY="305.0" prefHeight="110.0" prefWidth="338.0">
+      <TextArea fx:id="display_chatText" disable="true" editable="false" layoutX="36.0" layoutY="305.0" prefHeight="110.0" prefWidth="338.0" style="-fx-text-fill: #000000;">
          <font>
             <Font name="Calibri Light" size="24.0" />
          </font>

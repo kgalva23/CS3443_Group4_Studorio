@@ -2,10 +2,12 @@ package application.model;
 
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.Properties;
 
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
@@ -13,6 +15,8 @@ import javafx.scene.control.Alert.AlertType;
 public class DataModel {
 	
 	private static HashMap<String,String> account = new HashMap<String,String>();		//Create a HashMap to store string objects with username being the key and password being the value
+	private static Properties properties = new Properties();	//properties file to store HashMap key and values in
+	
 	private static LinkedList<String> userList = new LinkedList<String>();		//create a LinkedList to store user IDs in
 	private static LinkedList<String> majorList = new LinkedList<String>();		//create a LinkedList to store majors in
 	private static LinkedList<String> emailList= new LinkedList<String>();		//create a LinkedList to store emails in
@@ -20,9 +24,9 @@ public class DataModel {
 	public static LinkedList<String> activeUsers= new LinkedList<String>();		//create a LinkedList to store active users in
 
 	
-	private static String userFilePath = "data/users.txt";		//create a txt file for users
-	private static String majorFilePath = "data/majors.txt";			//create a txt file for majors
-	private static String emailFilePath = "data/emails.txt";		//create a txt file for emails
+	private static String userFilePath = "Data/users.txt";		//create a txt file for users
+	private static String majorFilePath = "Data/majors.txt";			//create a txt file for majors
+	private static String emailFilePath = "Data/emails.txt";		//create a txt file for emails
 	
 	private static boolean passwordIsValid;		//boolean variable for whether password is valid or not
 	
@@ -42,6 +46,12 @@ public class DataModel {
 		//confirmation message is also displayed
 		else {
 			account.put(username, password);
+			
+			properties.putAll(account);
+			File file = new File("Data/properties");
+	        FileOutputStream writer = new FileOutputStream(file,true);
+	        properties.store(writer,null);
+	        
 			System.out.println("Password valid");
 			Alert error = new Alert(AlertType.CONFIRMATION);
 			error.setTitle("Confirmation Message");

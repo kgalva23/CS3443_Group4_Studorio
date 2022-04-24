@@ -87,7 +87,7 @@ public class SearchController {
     void move(ActionEvent event) throws IOException {
     	URL url = new File("src/application/view/ChatRoom.fxml").toURI().toURL(); 
 		AnchorPane root = (AnchorPane)FXMLLoader.load(url);
-    	Scene scene = new Scene(root,400,400);
+    	Scene scene = new Scene(root,800,800);
     	Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
     	window.setScene(scene);
     }

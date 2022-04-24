@@ -3,18 +3,22 @@ package application.controller;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.util.ResourceBundle;
 
+import application.model.DataModel;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-public class ChatRoomController {
+public class ChatRoomController implements Initializable {
 
 	    //local variables
 		@FXML
@@ -28,6 +32,9 @@ public class ChatRoomController {
 
 	    @FXML
 	    private TextArea send_chat; 
+	    
+	    @FXML
+	    private ListView<String> activeUserList;
 
 
 	    @FXML
@@ -44,9 +51,13 @@ public class ChatRoomController {
 	    @FXML
 	    void button_send(ActionEvent event) {
 	    	String text1 = send_chat.getText();
-
+	    
 	    	display_chatText.setText(text1);
+	    	
 	    	System.out.println("Message Submitted");
+	    	
+	    	send_chat.clear();
+
 
 	    }
 	    
@@ -59,4 +70,23 @@ public class ChatRoomController {
 	    	window.setScene(scene);
 	    	window.show();
 	    }
+
+
+		@Override
+		public void initialize(URL arg0, ResourceBundle arg1) {
+			
+			activeUserList.getItems().clear();
+
+			
+			for (String activeUser : DataModel.activeUsers) {
+				//System.out.println(activeUser);
+
+				if (!activeUserList.getItems().contains(activeUser))
+					activeUserList.getItems().addAll(DataModel.activeUsers);
+		
+			}
+			
+			
+			
+		}
 }

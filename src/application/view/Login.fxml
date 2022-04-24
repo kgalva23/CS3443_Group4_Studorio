@@ -6,22 +6,33 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="399.0" prefWidth="397.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.LoginController">
+<AnchorPane prefHeight="399.0" prefWidth="397.0" style="-fx-background-color: #212121;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.LoginController">
    <children>
       <AnchorPane prefHeight="399.0" prefWidth="397.0">
          <children>
-            <PasswordField fx:id="passwordField" layoutX="95.0" layoutY="148.0" onAction="#passwordHandle" promptText="Password">
+            <PasswordField fx:id="passwordField" layoutX="105.0" layoutY="184.0" onAction="#passwordHandle" promptText="Password">
                <tooltip>
                   <Tooltip fx:id="ttPassword" text="Empty Tooltip" />
                </tooltip></PasswordField>
-            <TextField fx:id="usernameField" layoutX="95.0" layoutY="88.0" onAction="#userHandle" promptText="Username" />
-            <Button fx:id="loginButton" layoutX="219.0" layoutY="346.0" mnemonicParsing="false" onAction="#loginHandle" text="Log In" />
-            <Button fx:id="menuButton" layoutX="310.0" layoutY="346.0" mnemonicParsing="false" onAction="#menuReturn" text="Menu" />
-            <CheckBox fx:id="showPasswordCheck" layoutX="5.0" layoutY="154.0" mnemonicParsing="false" onAction="#showPasswordHandle" prefHeight="13.0" prefWidth="97.0" text="Show password">
+            <TextField fx:id="usernameField" layoutX="105.0" layoutY="125.0" onAction="#userHandle" promptText="Username" />
+            <Button fx:id="loginButton" layoutX="219.0" layoutY="346.0" mnemonicParsing="false" onAction="#loginHandle" style="-fx-background-color: #0e4bef;" text="Log In" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Semilight" size="15.0" />
+               </font></Button>
+            <Button fx:id="menuButton" layoutX="310.0" layoutY="346.0" mnemonicParsing="false" onAction="#menuReturn" style="-fx-background-color: #0e4bef;" text="Menu" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Semilight" size="15.0" />
+               </font></Button>
+            <CheckBox fx:id="showPasswordCheck" layoutX="7.0" layoutY="192.0" mnemonicParsing="false" onAction="#showPasswordHandle" prefHeight="13.0" prefWidth="97.0" text="Show password" textFill="WHITE">
                <font>
                   <Font size="10.0" />
                </font>
             </CheckBox>
+            <Label alignment="CENTER" layoutX="116.0" layoutY="50.0" prefHeight="53.0" prefWidth="161.0" text="Account Login" textFill="WHITE">
+               <font>
+                  <Font name="Rockwell" size="21.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
    </children>

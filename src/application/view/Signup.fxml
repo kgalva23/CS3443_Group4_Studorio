@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="399.0" prefWidth="397.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.SignupController">
+<AnchorPane prefHeight="399.0" prefWidth="397.0" style="-fx-background-color: #212121;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.SignupController">
    <children>
       <AnchorPane prefHeight="399.0" prefWidth="397.0">
          <children>
@@ -17,13 +17,49 @@
             <TextField fx:id="usernameField" layoutX="95.0" layoutY="79.0" onAction="#userHandle" promptText="Username" />
             <TextField fx:id="majorField" layoutX="95.0" layoutY="200.0" onAction="#majorHandle" promptText="Major" />
             <TextField fx:id="emailField" layoutX="95.0" layoutY="255.0" onAction="#emailHandle" promptText="Email" />
-            <Button fx:id="createButton" layoutX="219.0" layoutY="346.0" mnemonicParsing="false" onAction="#createHandle" text="Create" />
-            <Button fx:id="menuButton" layoutX="310.0" layoutY="346.0" mnemonicParsing="false" onAction="#menuReturn" text="Menu" />
-            <CheckBox fx:id="showPasswordCheck" layoutX="2.0" layoutY="147.0" mnemonicParsing="false" onAction="#showPasswordHandle" prefHeight="13.0" prefWidth="97.0" text="Show password">
+            <Button fx:id="createButton" layoutX="219.0" layoutY="346.0" mnemonicParsing="false" onAction="#createHandle" style="-fx-background-color: #0e4bef;" text="Create" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Semilight" size="15.0" />
+               </font></Button>
+            <Button fx:id="menuButton" layoutX="310.0" layoutY="346.0" mnemonicParsing="false" onAction="#menuReturn" style="-fx-background-color: #0e4bef;" text="Menu" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Semilight" size="15.0" />
+               </font></Button>
+            <CheckBox fx:id="showPasswordCheck" layoutX="2.0" layoutY="147.0" mnemonicParsing="false" onAction="#showPasswordHandle" prefHeight="13.0" prefWidth="97.0" text="Show password" textFill="WHITE">
                <font>
                   <Font size="10.0" />
                </font>
             </CheckBox>
+            <Label layoutX="291.0" layoutY="69.0" text="*" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="291.0" layoutY="137.0" text="*" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="288.0" layoutY="255.0" text="*" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="119.0" layoutY="305.0" text="*" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="129.0" layoutY="310.0" text="These fields are required!" textFill="WHITE">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="94.0" layoutY="14.0" prefHeight="49.0" prefWidth="210.0" text="Create An Account" textFill="WHITE">
+               <font>
+                  <Font name="Rockwell" size="21.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
    </children>

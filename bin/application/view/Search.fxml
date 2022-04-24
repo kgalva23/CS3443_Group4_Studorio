@@ -24,8 +24,8 @@
             <Label layoutX="50.0" layoutY="83.0" text="Interest #1" textFill="WHITE" />
             <Label layoutX="50.0" layoutY="173.0" text="Interest #2" textFill="WHITE" />
             <Label layoutX="50.0" layoutY="264.0" text="Interest #3" textFill="WHITE" />
-            <Button fx:id="suggestButton" layoutX="12.0" layoutY="364.0" mnemonicParsing="false" onAction="#suggest" style="-fx-background-color: #0e4bef;" text="Get Room Suggestion" textFill="WHITE" />
-            <Button fx:id="homeButton" layoutX="324.0" layoutY="364.0" mnemonicParsing="false" onAction="#home" prefHeight="1.0" prefWidth="50.0" style="-fx-background-color: #0e4bef;" text="Home" textFill="WHITE" />
+            <Button fx:id="suggestButton" layoutX="4.0" layoutY="364.0" mnemonicParsing="false" onAction="#suggest" style="-fx-background-color: #0e4bef;" text="Get Room Suggestion" textFill="WHITE" />
+            <Button fx:id="homeButton" layoutX="345.0" layoutY="364.0" mnemonicParsing="false" onAction="#home" prefHeight="31.0" prefWidth="62.0" style="-fx-background-color: #0e4bef;" text="Home" textFill="WHITE" />
             <Button fx:id="moveButton" layoutX="175.0" layoutY="364.0" mnemonicParsing="false" onAction="#move" style="-fx-background-color: #0e4bef;" text="Go To Selected Room" textFill="WHITE" />
          </children>
       </AnchorPane>
